@@ -16,5 +16,12 @@ namespace Zamiana_Materiałów_v1._0
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form3 otworz = new Form3();
+            otworz.Show();
+            
+        }
     }
 }
