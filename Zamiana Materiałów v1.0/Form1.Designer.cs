@@ -60,10 +60,18 @@
             this.label10 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.radioButtonMie = new System.Windows.Forms.RadioButton();
+            this.radioButtonMos = new System.Windows.Forms.RadioButton();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPret)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTuleja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPret6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -73,11 +81,12 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(226, 62);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "80";
+            this.textBox1.Text = "60";
             // 
             // radioButtonAlu
             // 
             this.radioButtonAlu.AutoSize = true;
+            this.radioButtonAlu.Checked = true;
             this.radioButtonAlu.Location = new System.Drawing.Point(891, 251);
             this.radioButtonAlu.Name = "radioButtonAlu";
             this.radioButtonAlu.Size = new System.Drawing.Size(72, 17);
@@ -111,7 +120,7 @@
             // radioButtonTef
             // 
             this.radioButtonTef.AutoSize = true;
-            this.radioButtonTef.Location = new System.Drawing.Point(891, 320);
+            this.radioButtonTef.Location = new System.Drawing.Point(891, 366);
             this.radioButtonTef.Name = "radioButtonTef";
             this.radioButtonTef.Size = new System.Drawing.Size(55, 17);
             this.radioButtonTef.TabIndex = 1;
@@ -122,7 +131,7 @@
             // radioButtonTek
             // 
             this.radioButtonTek.AutoSize = true;
-            this.radioButtonTek.Location = new System.Drawing.Point(891, 343);
+            this.radioButtonTek.Location = new System.Drawing.Point(890, 389);
             this.radioButtonTek.Name = "radioButtonTek";
             this.radioButtonTek.Size = new System.Drawing.Size(65, 17);
             this.radioButtonTek.TabIndex = 1;
@@ -175,6 +184,7 @@
             // radioButtonPret
             // 
             this.radioButtonPret.AutoSize = true;
+            this.radioButtonPret.Checked = true;
             this.radioButtonPret.Location = new System.Drawing.Point(27, 37);
             this.radioButtonPret.Name = "radioButtonPret";
             this.radioButtonPret.Size = new System.Drawing.Size(83, 17);
@@ -220,19 +230,21 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label5.Location = new System.Drawing.Point(12, 358);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.Size = new System.Drawing.Size(55, 20);
             this.label5.TabIndex = 2;
             this.label5.Text = "Wynik:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.ForeColor = System.Drawing.Color.Red;
             this.label6.Location = new System.Drawing.Point(12, 380);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 13);
+            this.label6.Size = new System.Drawing.Size(55, 20);
             this.label6.TabIndex = 2;
             this.label6.Text = "Wynik:";
             // 
@@ -278,7 +290,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(226, 62);
             this.textBox2.TabIndex = 0;
-            this.textBox2.Text = "60";
+            this.textBox2.Text = "80";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox5
@@ -350,6 +362,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(226, 62);
             this.textBox6.TabIndex = 0;
+            this.textBox6.Text = "50";
             this.textBox6.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label10
@@ -381,11 +394,86 @@
             this.label11.Text = "Podaj rok od kiedy leży materiał na magazynie:";
             this.label11.Click += new System.EventHandler(this.label4_Click);
             // 
+            // radioButtonMie
+            // 
+            this.radioButtonMie.AutoSize = true;
+            this.radioButtonMie.Location = new System.Drawing.Point(891, 320);
+            this.radioButtonMie.Name = "radioButtonMie";
+            this.radioButtonMie.Size = new System.Drawing.Size(53, 17);
+            this.radioButtonMie.TabIndex = 7;
+            this.radioButtonMie.TabStop = true;
+            this.radioButtonMie.Text = "Miedź";
+            this.radioButtonMie.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonMos
+            // 
+            this.radioButtonMos.AutoSize = true;
+            this.radioButtonMos.Location = new System.Drawing.Point(891, 343);
+            this.radioButtonMos.Name = "radioButtonMos";
+            this.radioButtonMos.Size = new System.Drawing.Size(64, 17);
+            this.radioButtonMos.TabIndex = 8;
+            this.radioButtonMos.TabStop = true;
+            this.radioButtonMos.Text = "Mosiądz";
+            this.radioButtonMos.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(1165, 251);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(41, 13);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "label12";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(1165, 278);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(41, 13);
+            this.label13.TabIndex = 9;
+            this.label13.Text = "label12";
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(1132, 54);
+            this.trackBar1.Maximum = 6;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(104, 45);
+            this.trackBar1.TabIndex = 5;
+            this.trackBar1.Value = 2;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(1128, 15);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(108, 13);
+            this.label14.TabIndex = 11;
+            this.label14.Text = "Zaokrąglenie wyniku:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(1129, 38);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(115, 13);
+            this.label15.TabIndex = 12;
+            this.label15.Text = "2 miejsca po przecinku";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1247, 450);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.trackBar1);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.radioButtonMos);
+            this.Controls.Add(this.radioButtonMie);
             this.Controls.Add(this.pictureBoxPret6);
             this.Controls.Add(this.pictureBoxTuleja);
             this.Controls.Add(this.pictureBoxPret);
@@ -414,12 +502,14 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Zamiana materiałów";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPret)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTuleja)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPret6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -458,6 +548,13 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.RadioButton radioButtonMie;
+        private System.Windows.Forms.RadioButton radioButtonMos;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
     }
 }
 

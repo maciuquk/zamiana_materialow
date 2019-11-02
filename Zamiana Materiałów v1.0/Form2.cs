@@ -23,5 +23,26 @@ namespace Zamiana_Materiałów_v1._0
             otworz.Show();
             
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape) ZamknijForm2();
+        }
+
+        private void ZamknijForm2()
+        {
+            this.Close();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Form1 otworzForm1 = new Form1();
+            otworzForm1.Show();
+        }
     }
 }
